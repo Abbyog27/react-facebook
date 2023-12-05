@@ -7,49 +7,41 @@ export default function Home() { // exporting the function Home
   return (
     <div className={styles.container}>
       <Head>
-        <title>Rome's Engineering Blog</title>
+        <title>React Facebook</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <h1 className={styles.title}>
-          Welcome to my blog!
+          React Facebook
         </h1>
 
-        <Image src='/engineer.png' alt='engineer' width='200' height='200'/>
+        <Image src='/engineer.png' alt='engineer' width='150' height='150'/>
 
         <p className={styles.description}>
-          Get started by reading the blog.
+          Connect with other engineers using React!
         </p>
 
         <div className={styles.grid}>
-          <Link href="/posts/first-post" className={styles.card}>
-            <h3>First Blog &rarr;</h3>
-            <p>Learn about my engineering journey</p>
+          <Link href="/facebook/messages" className={styles.card}>
+            <h3>Messages &rarr;</h3>
+            <p>Someone wants to connect</p>
           </Link>
 
-          <Link href="/posts/second-post" className={styles.card}>
-            <h3>Second Blog &rarr;</h3>
-            <p>Learn about React</p>
+          <Link href="/facebook/notifications" className={styles.card}>
+            <h3>Notifications &rarr;</h3>
+            <p>Don't miss out</p>
           </Link>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h3>Third Blog &rarr;</h3>
-            <p>Discover all the cool things about MongoDB.</p>
-          </a>
+          <Link href="/facebook/newsfeed" className={styles.card}>
+            <h3>Newsfeed &rarr;</h3>
+            <p>Keep up with React</p>
+            </Link>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Fourth Blog &rarr;</h3>
-            <p>
-              My new job pays crazy good.
-            </p>
-          </a>
+          <Link href="/facebook/updates" className={styles.card}>
+            <h3>React Updates &rarr;</h3>
+            <p> Find out what's new with React!</p>
+            </Link>
         </div>
       </main>
 

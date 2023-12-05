@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from '../../styles/Inbox.module.css';
-import Message from '../message';
+import Message from '../messages';
 import Avatar from '../avatar';
 
 // data
