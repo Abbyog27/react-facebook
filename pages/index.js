@@ -2,6 +2,7 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
+import Sidebar from './facebook/gaming/sidebar';
 
 export default function Home() { // exporting the function Home
   return (
@@ -19,10 +20,15 @@ export default function Home() { // exporting the function Home
         <Image src='/engineer.png' alt='engineer' width='150' height='150'/>
 
         <p className={styles.description}>
-          Connect with other engineers using React!
+          Connect with others!
         </p>
 
         <div className={styles.grid}>
+          <Link href="/facebook/gaming/sidebar" className={styles.card}>
+            <h3>Gaming &rarr;</h3>
+          </Link>
+
+        
           <Link href="/facebook/messages" className={styles.card}>
             <h3>Messages &rarr;</h3>
             <p>Someone wants to connect</p>
@@ -35,12 +41,12 @@ export default function Home() { // exporting the function Home
 
           <Link href="/facebook/newsfeed" className={styles.card}>
             <h3>Newsfeed &rarr;</h3>
-            <p>Keep up with React</p>
+            <p>Keep up with the times</p>
             </Link>
 
           <Link href="/facebook/updates" className={styles.card}>
-            <h3>React Updates &rarr;</h3>
-            <p> Find out what's new with React!</p>
+            <h3>Updates &rarr;</h3>
+            <p> Find out what is headlining!</p>
             </Link>
         </div>
       </main>

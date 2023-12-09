@@ -1,34 +1,32 @@
 import Link from 'next/link';
-import styles from '../../styles/SecondPost.module.css';
+import styles from '../../styles/Notifications.module.css';
 import Avatar from '../avatar';
 
-// data
-const reactArray = [
-    { topic: 'components', description: 'components are used to build React App'},
-    { topic: 'props', description: 'props are used to pass data down to other components'},
-    { topic: 'link tag', description: 'link tag is a next tag used to navigate React App'},
+//data
+const array = [
+'Anna',
+'Yazmin',
+'Bob',
+'Diego',
+'Pamela',
+'Julian',
+'Sandra'
 ]
 
-export default function SecondPost() {
-    const reactArrayDisplay = reactArray.map((obj, idx) => {
-        return (
-            <div className={styles.card} key={idx}>
-                <h3>{obj.topic}</h3>
-                <p>{obj.description}</p>
-            </div>
-        )
+export default function Notifications() {
+    const NotificationsArray = array.map((s, idx) => {
+        return <p key={idx}>{s}</p>
     })
-
     return (
-        <div className={styles.container}>
-            <h1>Second Post</h1>
+        <div className= {styles.container}>
+            <h1>Your Notifications</h1>
             <Avatar />
-            <p>React is a frontend framework that allows us to make components and more...</p>
-
-            <div className={styles.grid}>
-                {reactArrayDisplay}
+            <p>Don't miss anything</p>
+            <p>Your top notifiations come from  {array[5]}</p>
+            <div>
+                Your most recent notifications:
+                {NotificationsArray}
             </div>
-
             <Link href="/">Return Home</Link>
         </div>
     )
