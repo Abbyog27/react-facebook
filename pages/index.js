@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import Sidebar from './facebook/gaming/sidebar';
+import Nav from './nav';
 
 export default function Home() { // exporting the function Home
   return (
@@ -11,6 +12,10 @@ export default function Home() { // exporting the function Home
         <title>React Facebook</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <div className={styles.navBarContainer}>
+        <Nav />
+      </div>
 
       <main>
         <h1 className={styles.title}>
