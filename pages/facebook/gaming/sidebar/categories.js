@@ -1,9 +1,13 @@
 import Link from 'next/link';
 import styles from '../../../../styles/Sidebar.module.css';
+import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
+import MapIcon from '@mui/icons-material/Map';
+import CasinoIcon from '@mui/icons-material/Casino';
+
 
 
 const array = [
-    'All games',
+'All games',
     'Action',
     'Adventure',
     'Arcade',
@@ -20,9 +24,9 @@ const array = [
         })
         return (
             <div className= {styles.container}>
-                
-                <div>
-                    <h3>Categories</h3>
+
+                <div className={styles.CategoriesArray}>
+                    <h3 className={styles.title}>Categories</h3>
                     {CategoriesArray}
                 </div>
                 <Link href="/">Return Home</Link>

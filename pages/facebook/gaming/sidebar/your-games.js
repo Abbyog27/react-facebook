@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styles from '../../../../styles/Sidebar.module.css';
 
-export default function Yourgames (){
+export default function Yourgames() {
     return (
       <div>
         <h3>Your games</h3> <Link href="/">See All</Link>
